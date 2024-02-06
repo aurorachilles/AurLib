@@ -1,0 +1,14 @@
+
+
+
+Book Management System
+
+- /
+- this will provide a basic interface for user interaction
+
+- /getall
+- will get all books and arrange them in a template
+
+- /rentbook
+- pass id of book to a page to display it in it's full glory
+
