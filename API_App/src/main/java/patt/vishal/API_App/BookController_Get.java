@@ -25,9 +25,9 @@ public ResponseEntity<List<Books>> allBooks(){
     return new ResponseEntity<List<Books>>(bookService.allBooks(), HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Optional<Books>> bookById(@PathVariable ObjectId id){
-        return new ResponseEntity<Optional<Books>>(bookService.bookById(id), HttpStatus.OK);
+    @GetMapping("/{isbn_id}")
+    public ResponseEntity<Optional<Books>> bookById(@PathVariable String isbn_id){
+        return new ResponseEntity<Optional<Books>>(bookService.bookById(isbn_id), HttpStatus.OK);
     }
 
 

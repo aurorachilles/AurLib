@@ -3,8 +3,20 @@
 
 Book Management System
 
-- /
-- this will provide a basic interface for user interaction
+-------------------------------------------
+Description
+
+A Library where users can login and borrow books from the library.
+
+--------------------------------------------
+- /login - post
+- this will be for user login where uesr will login and see all sessions.
+
+-/books - get
+- this will provide the user with all available books for borrowing
+
+-/borrowed - get
+= this will show the user which books they have borrowed
 
 - /getall
 - will get all books and arrange them in a template

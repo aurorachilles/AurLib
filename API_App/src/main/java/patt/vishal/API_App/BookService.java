@@ -17,7 +17,7 @@ public class BookService {
         return bookRepo.findAll();
     }
 
-    public Optional<Books> bookById(ObjectId id){
-        return bookRepo.findById(id);
+    public Optional<Books> bookById(String isbn_id){
+        return bookRepo.getBookByIsbn(isbn_id);
     }
 }
