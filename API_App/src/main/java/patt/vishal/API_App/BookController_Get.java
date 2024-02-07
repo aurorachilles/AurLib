@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/get")
+@RequestMapping("/books")
 public class BookController_Get {
 
     @Autowired
