@@ -20,4 +20,12 @@ public class BookService {
     public Optional<Books> bookById(String isbn_id){
         return bookRepo.getBookByIsbn(isbn_id);
     }
+
+    public ObjectId postBook(Books books){
+        return bookRepo.insert(books).getId();
+    }
+
+    public List<Books> deleteBook(String isbn){
+        return bookRepo.deleteByIsbn(isbn);
+    }
 }
